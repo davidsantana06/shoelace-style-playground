@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoelace Style Playground</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/shoelace.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class="container d-flex flex-column row-gap-5 my-3 my-md-5">
+        <div class="mt-5">
+            <h1 class="text-center fw-bold column-gap-2 mb-5">
+                Shoelace Style Playground
+            </h1>
+        </div>
+        <div id="alert">
+            <div class="title mb-4">
+                <h2>Alert</h2>
+                <code>&lt;sl-alert&gt;</code>
+            </div>
+            <div class="components d-flex flex-column row-gap-4">
+                <sl-alert 
+                    variant="primary" 
+                    open
+                >
+                    <sl-icon 
+                        slot="icon"
+                        name="info-circle"
+                    ></sl-icon>
+                    <strong>Autenticação necessária!</strong><br />
+                    Para continuar, é necessário realizar o login.
+                </sl-alert>
+                <sl-alert
+                    variant="success"
+                    open
+                    closable
+                >
+                    <sl-icon 
+                        slot="icon"
+                        name="info-circle"
+                    ></sl-icon>
+                    <strong>Operação concluída!</strong><br />
+                    Os dados do cliente foram excluídos do sistema.
+                </sl-alert>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+</body>
+
+</html>
